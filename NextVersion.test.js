@@ -16,3 +16,7 @@ it("eight digit version test", () => {
 it("version all nines", () => {
   expect(nextVersion("9.9.9.9.9.9")).toBe("10.0.0.0.0.0");
 });
+
+it("middle digit changes ", () => {
+  expect(nextVersion("4.9.5.9.9")).toBe("4.9.6.0.0");
+});
